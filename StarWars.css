@@ -1,0 +1,300 @@
+body{
+  background-image:url("./assets/stars.jpg");
+}
+
+.p{
+  font-weight: 600;
+  font-family: DIN, Helvetica, Arial, sans-serif;
+}
+/*floating nav bar*/
+
+#navbar {
+    overflow: hidden;
+    background-color: black;
+    margin-left: 0em;
+    margin-right: 0em;
+    position: center;
+    text-align: center;
+    border-style: 20px solid;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    position: center;
+    text-align: center;
+    float: center;
+    display: center;
+    color: grey;
+    text-align: 0;
+    padding: 25px;
+    text-decoration: none;
+    margin-left: 0em;
+    margin-right: 0em;
+    border-style: solid;
+    font-family: DIN, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+  }
+
+  #navbar a:hover {
+    background-image: url("./assets/stars.jpg");
+    color: white;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+/*background assets*/
+
+#banner{
+    background-image: url("./assets/StarWars.jpg");
+    display:block;
+    text-align: center;
+    margin:0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+}
+
+#logo{
+  background-image: url("./assets/stars.jpg");
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.background{
+    background-image: url("./assets/stars.jpg");
+    display:grid;
+    text-align: center;
+    margin:0;
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+}
+
+/*icons*/
+
+#icons{
+  display: left;
+  text-align: center;
+  position: left;
+  float: left;
+  padding: 5px;
+}
+
+#icons2{
+  display: left;
+  text-align: center;
+  position: left;
+  float: left;
+  padding: 5px;
+}
+
+#icons3{
+  display: left;
+  text-align: center;
+  position: left;
+  float: left;
+  padding: 5px;
+}
+
+#icons4{
+  display: left;
+  text-align: center;
+  position: left;
+  float: left;
+  padding: 5px;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*searchBar*/
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-image: url("./assets/stars.jpg");
+  }
+  
+  /* Style the links inside the navigation bar */
+.undernav{
+  background-image: url("./assets/stars.jpg");
+  float: right;
+  display: right;
+  color:lightgrey;
+  text-align: right;
+  padding:7px;
+  text-decoration: none;
+  font-size: 20px;
+  opacity: 0.5;
+  font-family: "DIN Next W01 Regular", Helvetica, Arial, sans-serif;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-image: url("./assets/stars.jpg");
+    color: white;
+  }
+  
+  /* Style the "active" element to highlight the current page */
+  .topnav a.active {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  /* Style the search box inside the navigation bar */
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    opacity: 0.5;
+    border-radius: 5px;
+  }
+  
+  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: right;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border-image: url("./assets/stars.jpg");
+    }
+  }
+  p{
+  color:white;
+  }
+/*Slideshow effect*/
+.slidershow{
+  width: 1200px;
+  height:600px;
+  overflow:hidden;
+}
+
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.navigation{
+  position: absolute;
+  bottom:20px;
+  left:50px;
+  transform: translateX(-50%);
+  display: fixed;
+}
+
+.bar{
+  width: 50px;
+  height: 10px;
+  border:2px solid black;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4;
+}
+
+.bar:hover{
+  background:blue;
+}
+
+input[name="r"]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides{
+  width: 600%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition:0.6s;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~.s1{
+  margin-left: 0;
+}
+
+#r2:checked ~.s1{
+  margin-left: -20%;
+}
+
+#r3:checked ~.s1{
+  margin-left: -40%;
+}
+
+#r4:checked ~.s1{
+  margin-left: -60%;
+}
+
+/*table at bottom*/
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+
+#bn2 {
+  font-size: 2em;
+  background-color: white;
+  margin-left: 0;
+  margin-right: 0;
+  float: block;
+}
+
+#vis {
+  font-size: 2em;
+  background-color: white;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0em;
+  top: 0;
+  left: 20px;
+}
+#gal{
+  font-size: 2em;
+  background-color: white;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+ }
