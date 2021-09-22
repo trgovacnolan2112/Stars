@@ -20,6 +20,7 @@ body{
   
   /* Navbar links */
   #navbar a {
+
     position: center;
     text-align: center;
     float: center;
@@ -34,7 +35,7 @@ body{
     font-family: DIN, Helvetica, Arial, sans-serif;
     font-weight: 600;
   }
-
+g
   #navbar a:hover {
     background-image: url("./assets/stars.jpg");
     color: white;
