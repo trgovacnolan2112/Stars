@@ -274,24 +274,45 @@ input[name="r"]{
 
 /* Clear floats after image containers */
 
-#bn2 {
-  font-size: 2em;
-  background-color: white;
-  margin-left: 0;
-  margin-right: 0;
-  float: block;
+
+.line{
+ display: flex;
+ justify-content: center;
 }
 
-#vis {
-  font-size: 2em;
-  background-color: white;
-  margin-left: 100px;
-  margin-right: 0;
-  padding: 0em;
-  top: 0;
-  left: 0;
+
+.box1{
+  display: flex;
+  justify-content: center;
 }
 
+.box2{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.box3{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.box4{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.box5{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
 
 
 
